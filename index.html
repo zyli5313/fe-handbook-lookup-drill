@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FE Handbook Lookup Drill Picker</title>
+<meta name="description" content="Pick a random FE Civil handbook lookup target so you practice searching the FE Reference Handbook under time.">
+<meta name="robots" content="index,follow">
+<style>
+:root{--bg:#0f172a;--fg:#e2e8f0;--muted:#94a3b8;--accent:#38bdf8;--card:#1e293b}*{box-sizing:border-box}body{margin:0;font-family:system-ui,sans-serif;background:var(--bg);color:var(--fg);line-height:1.55}main{max-width:720px;margin:0 auto;padding:2rem 1.25rem 4rem}h1{margin:0 0 .5rem}p.lead{color:var(--muted)}.card{background:var(--card);border-radius:12px;padding:1.1rem;margin:1rem 0}button{background:var(--accent);color:#0f172a;border:0;border-radius:8px;padding:.55rem 1rem;font-weight:600;cursor:pointer}#prompt{font-size:1.15rem;min-height:3rem}a{color:var(--accent)}footer{margin-top:2rem;padding-top:1rem;border-top:1px solid #334155;color:var(--muted);font-size:.9rem}.guides{list-style:none;padding:0}.guides li{margin:.35rem 0}
+</style></head><body><main>
+<h1>FE handbook lookup drill picker</h1>
+<p class="lead">The CBT FE gives you a searchable PDF of the Reference Handbook. Speed at finding the right table often decides pacing. Draw a prompt, start a 60-second timer on your phone, and open the handbook.</p>
+<div class="card"><p id="prompt">Click draw to get a lookup target.</p><button type="button" id="go">Draw a lookup</button></div>
+<ul class="guides">
+<li><a href="https://acefeexam.com/fe/reference-handbook" target="_blank" rel="noopener">What you get in the FE Reference Handbook</a></li>
+<li><a href="https://acefeexam.com/how-to-search-the-fe-reference-handbook" target="_blank" rel="noopener">How to search the FE Reference Handbook</a></li>
+<li><a href="https://acefeexam.com/fe-reference-handbook-10-6-changes" target="_blank" rel="noopener">Handbook 10.6 changes</a></li>
+<li><a href="https://acefeexam.com/fe/civil/statics" target="_blank" rel="noopener">Statics on the FE Civil</a></li>
+<li><a href="https://acefeexam.com/fe/civil/structural-engineering" target="_blank" rel="noopener">Structural Engineering on the FE Civil</a></li>
+<li><a href="https://acefeexam.com/fe/civil/geotechnical-engineering" target="_blank" rel="noopener">Geotechnical Engineering on the FE Civil</a></li>
+<li><a href="https://acefeexam.com/fe/civil/practice-problems" target="_blank" rel="noopener">Free FE Civil practice problems</a></li>
+<li><a href="https://acefeexam.com/free-mock" target="_blank" rel="noopener">Free full-length timed mock</a></li>
+<li><a href="https://acefeexam.com/" target="_blank" rel="noopener">AceFEExam home</a></li>
+</ul>
+<footer>Fan-made companion for <a href="https://acefeexam.com/" target="_blank" rel="noopener">acefeexam.com</a>. Built against Handbook 10.6.</footer>
+<script>
+var prompts=["Find the beam bending stress formula","Find the Mohr-Coulomb shear-strength equation","Find the Rational Method runoff equation","Find Bernoulli equation form used on the FE","Find the steel modulus of elasticity value","Find present-worth factor tables","Find stopping sight distance formula","Find void ratio definition","Find critical path / float definitions","Find Reynolds number definition"];
+document.getElementById('go').onclick=function(){document.getElementById('prompt').textContent=prompts[Math.floor(Math.random()*prompts.length)];};
+</script>
+</main></body></html>
